@@ -1,5 +1,6 @@
 This is a fork of the original CycleGAN repository 
 
+
 Working Hypothesis¶
 Using a large diverse premade dataset in domain A that is made for the purpose of generalizing natural/natural like images of human faces instead of a costume dataset I collected myself (hance the lack of a data collection script) whilst using a relatively comparable in scale dataset in domain B (the one I want to generate from A) in cycleGAN 
 
@@ -48,5 +49,12 @@ some visual products:
 
 <img width="794" height="216" alt="download" src="https://github.com/user-attachments/assets/1dd575de-0384-4fd9-8de0-5ade27c30dda" />
 
+how to train and run:
+download the datasets. put the photorealistic human generalizer dataset at /my_dataset/trainA
+put the Arcane dataset at /my_dataset/trainB
 
+run myCGANhumantoarcane.ipynb
 
+it has a complete explanation of the project. the python code that is nessesery to train the network and the script for live inference i used in my live demonstration.
+
+in inference_experimental.ipynb you will be able to find alot of different versions of inference scripts for real time use (entire frame, face only....) including versions where the output is a virtual OBS camera (meaning you could use it as a custom filter in a call).
